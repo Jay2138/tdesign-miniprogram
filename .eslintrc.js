@@ -107,7 +107,7 @@ module.exports = {
       },
     },
     {
-      files: ['packages/tdesign-miniprogram/example/**', '**/_example/**'],
+      files: ['packages/tdesign-miniprogram/example/**', '**/_example/**', 'example/**'],
       rules: {
         'no-console': 0,
       },
