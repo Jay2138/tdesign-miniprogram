@@ -37,9 +37,15 @@ name | type | default | description | required
 style | Object | - | CSS(Cascading Style Sheets) | N
 custom-style | Object | - | CSS(Cascading Style Sheets)，used to set style on virtual component | N
 badge-props | Object | - | Typescript：`BadgeProps`，[Badge API Documents](./badge?tab=api)。[see more ts definition](https://github.com/Tencent/tdesign-miniprogram/blob/develop/packages/components/tab-bar-item/type.ts) | N
-icon | String / Object / Slot | - | [see more ts definition](https://github.com/Tencent/tdesign-miniprogram/blob/develop/packages/components/common/common.ts) | N
+icon | String / Object | - | \- | N
 sub-tab-bar | Array | - | Typescript：`SubTabBarItem[] ` `interface SubTabBarItem { value: string; label: string }`。[see more ts definition](https://github.com/Tencent/tdesign-miniprogram/blob/develop/packages/components/tab-bar-item/type.ts) | N
 value | String / Number | - | \- | N
+
+### TabBarItem Slots
+
+name | Description
+-- | --
+icon | \-
 
 ### CSS Variables
 
@@ -51,8 +57,6 @@ Name | Default Value | Description
 --td-tab-bar-round-shadow | @shadow-3 | - 
 --td-tab-bar-active-bg | @brand-color-light | - 
 --td-tab-bar-active-color | @brand-color | - 
---td-tab-bar-bg-color | @bg-color-container | - 
---td-tab-bar-border-color | @border-color | - 
 --td-tab-bar-color | @text-color-primary | - 
 --td-tab-bar-height | 80rpx | - 
 --td-tab-bar-hover-bg-color | rgba(0, 0, 0, 0.05) | - 

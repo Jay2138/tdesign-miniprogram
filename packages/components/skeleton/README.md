@@ -62,6 +62,12 @@ loading | Boolean | true | 是否为加载状态，如果是则显示骨架图�
 row-col | Array | - | 高级设置，用于自定义行列数量、宽度高度、间距等。【示例一】，`[1, 1, 2]` 表示输出三行骨架图，第一行一列，第二行一列，第三行两列。【示例二】，`[1, 1, { width: '100px' }]` 表示自定义第三行的宽度为 `100px`。【示例三】，`[1, 2, [{ width, height }, { width, height, marginLeft }]]` 表示第三行有两列，且自定义宽度、高度、尺寸（圆形或方形使用）、间距、内容等。TS 类型：`SkeletonRowCol` `type SkeletonRowCol = Array<Number \| SkeletonRowColObj \| Array<SkeletonRowColObj>>` `interface SkeletonRowColObj { width?: string; size?: string;height?: string; marginRight?: string; marginLeft?: string; margin?: string; type?: 'rect' \| 'circle' \| 'text';}`。[详细类型定义](https://github.com/Tencent/tdesign-miniprogram/blob/develop/packages/components/skeleton/type.ts) | N
 theme | String | text | 骨架图风格，有基础、头像组合等两大类。可选项：avatar/image/text/paragraph | N
 
+### Skeleton Slots
+
+名称 | 描述
+-- | --
+\- | 默认插槽，自定义内容区域内容
+
 ### Skeleton External Classes
 
 类名 | 描述
@@ -79,7 +85,6 @@ t-class-row | 列样式类
 --td-skeleton-animation-flashed | rgba(90%, 90%, 90%, 0.3) | - 
 --td-skeleton-animation-gradient | rgba(0, 0, 0, 4%) | - 
 --td-skeleton-bg-color | @bg-color-secondarycontainer | - 
---td-skeleton-circle-border-radius | @radius-circle | - 
 --td-skeleton-circle-height | 96rpx | - 
 --td-skeleton-rect-border-radius | @radius-default | - 
 --td-skeleton-rect-height | 32rpx | - 

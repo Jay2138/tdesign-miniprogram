@@ -68,6 +68,12 @@ default-value | String / Number | undefined | 选项值。非受控属性 | N
 change | `(value: number \| string, label: string)` | 选项值发生变化时触发
 click | `(value: number \| string, label: string)` | 点击选项时触发
 
+### SideBar Slots
+
+名称 | 描述
+-- | --
+\- | 默认插槽，自定义侧边导航栏内容
+
 
 ### SideBarItem Props
 
@@ -81,6 +87,12 @@ icon | String / Object | - | 图标，传对象则透传至 Icon | N
 label | String | - | 展示的标签 | N
 value | String / Number | - | 当前选项的值 | N
 
+### SideBarItem Slots
+
+名称 | 描述
+-- | --
+\- | 默认插槽，自定义侧边导航项内容
+
 ### CSS Variables
 
 组件提供了下列 CSS 变量，可用于自定义样式。
@@ -90,11 +102,10 @@ value | String / Number | - | 当前选项的值 | N
 --td-side-bar-height | 100% | - 
 --td-side-bar-width | 206rpx | - 
 --td-side-bar-active-color | @brand-color | - 
---td-side-bar-bg-color | @bg-color-secondarycontainer | - 
 --td-side-bar-border-radius | 18rpx | - 
 --td-side-bar-color | @text-color-primary | - 
 --td-side-bar-disabled-color | @text-color-disabled | - 
 --td-side-bar-font-size | 32rpx | - 
 --td-side-bar-icon-size | 40rpx | - 
---td-side-bar-item-height | 112rpx | - 
+--td-side-bar-item-height | auto | - 
 --td-side-bar-item-line-height | 48rpx | -

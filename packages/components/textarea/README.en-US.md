@@ -24,7 +24,7 @@ fixed | Boolean | false | \- | N
 focus | Boolean | false | \- | N
 hold-keyboard | Boolean | false | \- | N
 indicator | Boolean | false | \- | N
-label | String / Slot | - | [see more ts definition](https://github.com/Tencent/tdesign-miniprogram/blob/develop/packages/components/common/common.ts) | N
+label | String | - | \- | N
 maxcharacter | Number | - | \- | N
 maxlength | Number | -1 | \- | N
 placeholder | String | undefined | \- | N
@@ -48,6 +48,12 @@ focus | `(value: TextareaValue)` | \-
 keyboardheightchange | `(height: number, duration: number)` | \-
 line-change | `(value: TextareaValue)` | \-
 
+### Textarea Slots
+
+name | Description
+-- | --
+label | \-
+
 ### Textarea External Classes
 
 className | Description
@@ -68,5 +74,6 @@ Name | Default Value | Description
 --td-textarea-disabled-text-color | @text-color-disabled | - 
 --td-textarea-indicator-text-color | @text-color-placeholder | - 
 --td-textarea-label-color | @text-color-primary | - 
+--td-textarea-padding | 32rpx | - 
 --td-textarea-placeholder-color | @text-color-placeholder | - 
 --td-textarea-text-color | @text-color-primary | -

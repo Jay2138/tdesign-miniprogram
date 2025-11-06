@@ -87,7 +87,7 @@ fixed | Boolean | false | 如果 textarea 是在一个 `position:fixed` 的区�
 focus | Boolean | false | 自动聚焦 | N
 hold-keyboard | Boolean | false | focus时，点击页面的时候不收起键盘 | N
 indicator | Boolean | false | 显示文本计数器，如 0/140。当 `maxlength < 0 && maxcharacter < 0` 成立时， indicator无效 | N
-label | String / Slot | - | 左侧文本。[通用类型定义](https://github.com/Tencent/tdesign-miniprogram/blob/develop/packages/components/common/common.ts) | N
+label | String | - | 左侧文本 | N
 maxcharacter | Number | - | 用户最多可以输入的字符个数，一个中文汉字表示两个字符长度 | N
 maxlength | Number | -1 | 用户最多可以输入的字符个数，值为 -1 的时候不限制最大长度 | N
 placeholder | String | undefined | 占位符 | N
@@ -111,6 +111,12 @@ focus | `(value: TextareaValue)` | 获得焦点时触发
 keyboardheightchange | `(height: number, duration: number)` | 键盘高度发生变化的时候触发此事件
 line-change | `(value: TextareaValue)` | 行高发生变化时触发
 
+### Textarea Slots
+
+名称 | 描述
+-- | --
+label | 自定义 `label` 显示内容
+
 ### Textarea External Classes
 
 类名 | 描述
@@ -131,5 +137,6 @@ t-class-textarea | 多行文本框样式类
 --td-textarea-disabled-text-color | @text-color-disabled | - 
 --td-textarea-indicator-text-color | @text-color-placeholder | - 
 --td-textarea-label-color | @text-color-primary | - 
+--td-textarea-padding | 32rpx | - 
 --td-textarea-placeholder-color | @text-color-placeholder | - 
 --td-textarea-text-color | @text-color-primary | -

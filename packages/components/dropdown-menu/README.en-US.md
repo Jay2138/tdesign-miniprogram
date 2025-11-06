@@ -21,6 +21,12 @@ name | params | description
 close | \- | \-
 open | \- | \-
 
+### DropdownMenu Slots
+
+name | Description
+-- | --
+\- | \-
+
 ### DropdownMenu External Classes
 
 className | Description
@@ -38,7 +44,6 @@ name | type | default | description | required
 style | Object | - | CSS(Cascading Style Sheets) | N
 custom-style | Object | - | CSS(Cascading Style Sheets)，used to set style on virtual component | N
 disabled | Boolean | false | \- | N
-footer | Slot | - | [see more ts definition](https://github.com/Tencent/tdesign-miniprogram/blob/develop/packages/components/common/common.ts) | N
 keys | Object | - | Typescript：`KeysType`。[see more ts definition](https://github.com/Tencent/tdesign-miniprogram/blob/develop/packages/components/common/common.ts) | N
 label | String | - | \- | N
 multiple | Boolean | false | \- | N
@@ -57,6 +62,13 @@ change | `(value: DropdownValue)` | \-
 close | \- | \-
 confirm | `(value: DropdownValue)` | \-
 reset | \- | \-
+
+### DropdownItem Slots
+
+name | Description
+-- | --
+\- | \-
+footer | \-
 
 ### DropdownItem External Classes
 
@@ -83,7 +95,6 @@ Name | Default Value | Description
 --td-dropdown-menu-height | 96rpx | - 
 --td-dropdown-menu-icon-size | 40rpx | - 
 --td-dropdown-body-max-height | 560rpx | - 
---td-dropdown-menu-bg-color | @bg-color-container | - 
 --td-tree-bg-color | @bg-color-container | - 
 --td-tree-item-active-color | @brand-color | - 
 --td-tree-item-font-size | 32rpx | - 

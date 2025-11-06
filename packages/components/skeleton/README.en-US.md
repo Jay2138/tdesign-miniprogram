@@ -14,6 +14,12 @@ loading | Boolean | true | \- | N
 row-col | Array | - | Typescript：`SkeletonRowCol` `type SkeletonRowCol = Array<Number \| SkeletonRowColObj \| Array<SkeletonRowColObj>>` `interface SkeletonRowColObj { width?: string; size?: string;height?: string; marginRight?: string; marginLeft?: string; margin?: string; type?: 'rect' \| 'circle' \| 'text';}`。[see more ts definition](https://github.com/Tencent/tdesign-miniprogram/blob/develop/packages/components/skeleton/type.ts) | N
 theme | String | text | options: avatar/image/text/paragraph | N
 
+### Skeleton Slots
+
+name | Description
+-- | --
+\- | \-
+
 ### Skeleton External Classes
 
 className | Description
@@ -31,7 +37,6 @@ Name | Default Value | Description
 --td-skeleton-animation-flashed | rgba(90%, 90%, 90%, 0.3) | - 
 --td-skeleton-animation-gradient | rgba(0, 0, 0, 4%) | - 
 --td-skeleton-bg-color | @bg-color-secondarycontainer | - 
---td-skeleton-circle-border-radius | @radius-circle | - 
 --td-skeleton-circle-height | 96rpx | - 
 --td-skeleton-rect-border-radius | @radius-default | - 
 --td-skeleton-rect-height | 32rpx | - 
